@@ -19,8 +19,9 @@ disease_model.load_state_dict(
 disease_model.eval()
 
 
-@diseaseDetection_bp.route("/api/disease-detection", methods=["POST"])
+@diseaseDetection_bp.route("/detection", methods=["POST"])
 def detect_disease():
+    print("Received request for disease detection")
     try:
         if "file" not in request.files:
             return jsonify({"success": False, "error": "No file uploaded"}), 400

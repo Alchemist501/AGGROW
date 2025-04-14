@@ -1,0 +1,904 @@
+{
+  "common": {
+    "loading": "Loading...",
+    "error": "Error",
+    "submit": "Submit",
+    "predict": "Predict",
+    "predicting": "Predicting...",
+    "processing": "Processing...",
+    "required": "required",
+    "back": "Back",
+    "new": "New",
+    "cancel": "Cancel",
+    "save": "Save"
+  },
+  "header": {
+    "home": "Home",
+    "about": "About",
+    "services": "Services"
+  },
+  "navigation": {
+    "diseaseDetection": "Disease Detection",
+    "cropRecommendation": "Crop Recommendation",
+    "fertilizerRecommendation": "Fertilizer Recommendation"
+  },
+  "dashboard": {
+    "about": {
+      "title": "About Aggrow",
+      "description1": "Aggrow is an innovative agricultural technology platform designed to help farmers optimize their crop yields through data-driven insights and AI-powered recommendations.",
+      "description2": "Our mission is to empower farmers with cutting-edge technology that simplifies decision-making, reduces resource wastage, and maximizes productivity while promoting sustainable farming practices.",
+      "description3": "Founded by a team of agricultural experts and technology enthusiasts, Aggrow combines traditional farming wisdom with modern machine learning algorithms to provide practical solutions to everyday farming challenges."
+    },
+    "welcome": {
+      "title": "Welcome to Aggrow",
+      "description": "Your AI-powered agricultural assistant"
+    },
+    "services": {
+      "title": "Our Services",
+      "diseaseDetection": {
+        "title": "Disease Detection",
+        "description": "Identify plant diseases early through image recognition technology. Simply upload a photo of your affected plant, and our AI will diagnose the issue and suggest treatment options."
+      },
+      "cropRecommendation": {
+        "title": "Crop Recommendation",
+        "description": "Get personalized crop suggestions based on your soil composition, local climate data, and market trends to maximize your yield and profitability."
+      },
+      "fertilizerRecommendation": {
+        "title": "Fertilizer Recommendation",
+        "description": "Receive tailored fertilizer recommendations based on soil tests and crop requirements to ensure optimal plant nutrition while minimizing environmental impact."
+      }
+    }
+  },
+  "cropRecommendation": {
+    "title": "Crop Recommendation",
+    "subtitle": "Enter the soil and climate details to get a recommended crop.",
+    "subtitle2": "Find optimal crops for your land.",
+    "locationButton": "Use My Location",
+    "loadingMessage": "Loading location and weather data...",
+    "locationError": "Unable to get your location. Please select state and city manually.",
+    "geolocationNotSupported": "Geolocation is not supported by your browser. Please select state and city manually.",
+    "locationDeterminingError": "Error determining your location. Please select state and city manually.",
+    "form": {
+      "nitrogen": "Nitrogen:",
+      "phosphorous": "Phosphorous:",
+      "pottasium": "Pottasium:",
+      "ph": "pH Level:",
+      "rainfall": "Rainfall (in mm):",
+      "state": "State:",
+      "selectState": "Select State",
+      "city": "City:",
+      "selectCity": "Select City",
+      "temperature": "Temperature (°C):",
+      "humidity": "Humidity (%):",
+      "nitrogenPlaceholder": "Enter value (e.g., 50)",
+      "phosphorousPlaceholder": "Enter value (e.g., 50)",
+      "pottasiumPlaceholder": "Enter value (e.g., 50)",
+      "phPlaceholder": "Enter value",
+      "rainfallPlaceholder": "Enter value",
+      "temperaturePlaceholder": "Auto-filled from location",
+      "humidityPlaceholder": "Auto-filled from location"
+    },
+    "prediction": {
+      "analyzing": "Analyzing soil and climate data...",
+      "errorPrefix": "Error:",
+      "recommendedCrop": "Recommended Crop",
+      "inputDetails": "Based on your inputs:",
+      "npk": "N-P-K:",
+      "ph": "pH:",
+      "rainfall": "Rainfall:",
+      "temperature": "Temperature:",
+      "humidity": "Humidity:",
+      "newPrediction": "Make New Prediction"
+    }
+  },
+  "diseaseDetection": {
+    "title": "Disease Detection",
+    "subtitle2": "Identify plant health issues instantly",
+    "description": "Upload an image of the plant leaf to detect diseases.",
+    "noFileError": "Please upload an image before submitting.",
+    "recommendedTreatment": "Recommended Treatments",
+    "analysis": "Analyzing...",
+    "diagnose": "Diagnose",
+    "form": {
+      "imageInput": "Choose Image",
+      "preview": "Preview",
+      "scanning": " Scanning plant..."
+    },
+    "types": {
+      "organic": "Organic",
+      "chemical": "Chemical",
+      "prevention": "Extra Care for Plant Health",
+      "care": "Extra Care for Plant Health",
+      "management": "Care for Plant Health",
+      "maintenance": "Maintenance for Plant Health"
+    },
+    "Diseases": {
+      "Apple___Apple_scab": {
+        "name": "Apple Scab",
+        "description": "Fungal disease causing dark, scaly lesions on leaves and fruit.",
+        "causes": {
+          "1": "Caused by fungus Venturia inaequalis",
+          "2": "Spreads in cool, wet weather",
+          "3": "Overwinters in fallen leaves"
+        },
+        "treatments": {
+          "organic": {
+            "1": "Prune trees for better airflow",
+            "2": "Apply sulfur spray every 7-10 days in spring",
+            "3": "Remove fallen leaves in autumn"
+          },
+          "chemical": {
+            "1": "Myclobutanil (Immunox) during wet periods",
+            "2": "Captan fungicide at bud break"
+          }
+        }
+      },
+      "Apple___Black_rot": {
+        "name": "Black Rot",
+        "description": "Causes rotting fruit with concentric rings and leaf spots.",
+        "causes": {
+          "1": "Fungus Botryosphaeria obtusa",
+          "2": "Enters through wounds in fruit"
+        },
+        "treatments": {
+          "organic": {
+            "1": "Remove infected fruit immediately",
+            "2": "Copper sprays in early season"
+          },
+          "chemical": {
+            "1": "Apply fungicides at petal fall"
+          }
+        }
+      },
+      "Apple___Cedar_apple_rust": {
+        "name": "Cedar Apple Rust",
+        "description": "Orange-yellow spots on leaves with fungal growth underneath.",
+        "treatments": {
+          "organic": {
+            "1": "Remove nearby juniper/cedar trees if possible",
+            "2": "Apply sulfur or copper fungicides"
+          },
+          "chemical": {
+            "1": "Myclobutanil or triadimefon fungicides"
+          }
+        }
+      },
+      "Apple___healthy": {
+        "name": "Healthy Apple Tree",
+        "description": "Your apple tree shows no signs of disease!",
+        "treatments": {
+          "prevention": {
+            "1": "Prune annually to improve air circulation",
+            "2": "Apply dormant oil spray in late winter",
+            "3": "Maintain proper soil pH (6.0-6.5)"
+          }
+        }
+      },
+      "Blueberry___healthy": {
+        "name": "Healthy Blueberry",
+        "description": "Your blueberry plant is thriving!",
+        "treatments": {
+          "care": {
+            "1": "Maintain acidic soil (pH 4.5-5.5)",
+            "2": "Mulch with pine needles",
+            "3": "Prune old canes annually"
+          }
+        }
+      },
+      "Cherry_(including_sour)___Powdery_mildew": {
+        "name": "Cherry Powdery Mildew",
+        "description": "White powdery coating on leaves and shoots.",
+        "treatments": {
+          "organic": {
+            "1": "Apply potassium bicarbonate solution",
+            "2": "Improve air circulation through pruning"
+          },
+          "chemical": {
+            "1": "Sulfur or triforine fungicides"
+          }
+        }
+      },
+      "Cherry_(including_sour)___healthy": {
+        "name": "Healthy Cherry Tree",
+        "description": "Your cherry tree is in excellent condition!",
+        "treatments": {
+          "prevention": {
+            "1": "Avoid overhead watering",
+            "2": "Apply balanced fertilizer in early spring",
+            "3": "Monitor for borers"
+          }
+        }
+      },
+      "Corn_(maize)___Cercospora_leaf_spot Gray_leaf_spot": {
+        "name": "Corn Gray Leaf Spot",
+        "description": "Rectangular tan lesions with yellow halos on leaves.",
+        "treatments": {
+          "organic": {
+            "1": "Rotate crops (avoid continuous corn)",
+            "2": "Use resistant varieties"
+          },
+          "chemical": {
+            "1": "Apply azoxystrobin or pyraclostrobin fungicides"
+          }
+        }
+      },
+      "Corn_(maize)___Common_rust_": {
+        "name": "Corn Common Rust",
+        "description": "Small cinnamon-brown pustules on both leaf surfaces.",
+        "treatments": {
+          "organic": {
+            "1": "Plant early-maturing varieties",
+            "2": "Remove crop debris after harvest"
+          },
+          "chemical": {
+            "1": "Chlorothalonil or mancozeb fungicides"
+          }
+        }
+      },
+      "Corn_(maize)___Northern_Leaf_Blight": {
+        "name": "Northern Corn Leaf Blight",
+        "description": "Long, elliptical gray-green lesions that turn tan.",
+        "treatments": {
+          "organic": {
+            "1": "Practice crop rotation",
+            "2": "Use disease-free seed"
+          },
+          "chemical": {
+            "1": "Apply fungicides at first sign"
+          }
+        }
+      },
+      "Corn_(maize)___healthy": {
+        "name": "Healthy Corn",
+        "description": "Your corn plants are growing well!",
+        "treatments": {
+          "care": {
+            "1": "Ensure proper spacing (10-12 inches apart)",
+            "2": "Side-dress with nitrogen when plants are knee-high",
+            "3": "Water deeply during dry spells"
+          }
+        }
+      },
+      "Grape___Black_rot": {
+        "name": "Grape Black Rot",
+        "description": "Brown lesions on leaves with black fruit rot.",
+        "treatments": {
+          "organic": {
+            "1": "Remove mummified berries",
+            "2": "Apply copper fungicides"
+          },
+          "chemical": {
+            "1": "Mancozeb or captan fungicides"
+          }
+        }
+      },
+      "Grape___Esca_(Black_Measles)": {
+        "name": "Esca (Black Measles)",
+        "description": "Chronic wood disease causing leaf discoloration and berry spots.",
+        "treatments": {
+          "management": {
+            "1": "Prune infected wood (disinfect tools between cuts)",
+            "2": "Avoid excessive pruning",
+            "3": "Maintain vine balance"
+          }
+        }
+      },
+      "Grape___Leaf_blight_(Isariopsis_Leaf_Spot)": {
+        "name": "Grape Leaf Blight",
+        "description": "Angular brown spots with yellow halos on leaves.",
+        "treatments": {
+          "organic": {
+            "1": "Improve air circulation",
+            "2": "Remove infected leaves"
+          },
+          "chemical": {
+            "1": "Copper-based fungicides"
+          }
+        }
+      },
+      "Grape___healthy": {
+        "name": "Healthy Grape Vine",
+        "description": "Your grapevine is disease-free!",
+        "treatments": {
+          "care": {
+            "1": "Train vines for good air circulation",
+            "2": "Monitor for pests like Japanese beetles",
+            "3": "Test soil every 3 years"
+          }
+        }
+      },
+      "Orange___Haunglongbing_(Citrus_greening)": {
+        "name": "Citrus Greening (HLB)",
+        "description": "Yellow shoots, lopsided fruit, and bitter juice.",
+        "treatments": {
+          "management": {
+            "1": "Remove infected trees immediately",
+            "2": "Control psyllid vectors with insecticides",
+            "3": "Use disease-free nursery stock"
+          }
+        }
+      },
+      "Peach___Bacterial_spot": {
+        "name": "Peach Bacterial Spot",
+        "description": "Small dark spots on leaves and fruit that may crack.",
+        "treatments": {
+          "organic": {
+            "1": "Plant resistant varieties",
+            "2": "Avoid overhead irrigation"
+          },
+          "chemical": { "1": "Copper sprays during dormancy" }
+        }
+      },
+      "Peach___healthy": {
+        "name": "Healthy Peach Tree",
+        "description": "Your peach tree is in great condition!",
+        "treatments": {
+          "care": {
+            "1": "Prune to open center shape",
+            "2": "Thin fruit to 6-8 inches apart",
+            "3": "Apply dormant oil spray"
+          }
+        }
+      },
+      "Pepper,_bell___Bacterial_spot": {
+        "name": "Bacterial Leaf Spot",
+        "description": "Small water-soaked spots that turn brown on leaves.",
+        "treatments": {
+          "organic": {
+            "1": "Use pathogen-free seed",
+            "2": "Avoid working with wet plants"
+          },
+          "chemical": { "1": "Copper-based bactericides" }
+        }
+      },
+      "Pepper,_bell___healthy": {
+        "name": "Healthy Bell Pepper",
+        "description": "Your pepper plant is thriving!",
+        "treatments": {
+          "care": {
+            "1": "Provide consistent moisture",
+            "2": "Use balanced fertilizer",
+            "3": "Harvest regularly to promote more fruit"
+          }
+        }
+      },
+      "Potato___Early_blight": {
+        "name": "Early Blight",
+        "description": "Concentric rings on leaves with yellow halos.",
+        "treatments": {
+          "organic": {
+            "1": "Rotate crops (3-year rotation)",
+            "2": "Remove infected foliage"
+          },
+          "chemical": { "1": "Chlorothalonil or mancozeb fungicides" }
+        }
+      },
+      "Potato___Late_blight": {
+        "name": "Late Blight",
+        "description": "Water-soaked lesions that rapidly destroy foliage.",
+        "treatments": {
+          "organic": {
+            "1": "Destroy infected plants immediately",
+            "2": "Plant resistant varieties"
+          },
+          "chemical": { "1": "Apply fungicides preventatively in wet weather" }
+        }
+      },
+      "Potato___healthy": {
+        "name": "Healthy Potato",
+        "description": "Your potato plants are growing well!",
+        "treatments": {
+          "care": {
+            "1": "Hill soil around stems as plants grow",
+            "2": "Water consistently (1-2 inches per week)",
+            "3": "Harvest after vines die back"
+          }
+        }
+      },
+      "Raspberry___healthy": {
+        "name": "Healthy Raspberry",
+        "description": "Your raspberry canes are vigorous!",
+        "treatments": {
+          "maintenance": {
+            "1": "Prune old canes after fruiting",
+            "2": "Mulch to conserve moisture",
+            "3": "Provide trellis support"
+          }
+        }
+      },
+      "Soybean___healthy": {
+        "name": "Healthy Soybean",
+        "description": "Your soybean crop looks excellent!",
+        "treatments": {
+          "care": {
+            "1": "Rotate with corn or small grains",
+            "2": "Inoculate seeds with rhizobium bacteria",
+            "3": "Monitor for aphids"
+          }
+        }
+      },
+      "Squash___Powdery_mildew": {
+        "name": "Powdery Mildew",
+        "description": "White powdery coating on leaves that yellows and dies.",
+        "treatments": {
+          "organic": {
+            "1": "Milk spray (1 part milk to 9 parts water)",
+            "2": "Baking soda solution (1 tbsp per gallon)"
+          },
+          "chemical": {
+            "1": "Sulfur or potassium bicarbonate fungicides"
+          }
+        }
+      },
+      "Strawberry___Leaf_scorch": {
+        "name": "Leaf Scorch",
+        "description": "Purple spots with white centers on older leaves.",
+        "treatments": {
+          "organic": {
+            "1": "Remove infected leaves",
+            "2": "Improve air circulation"
+          },
+          "chemical": {
+            "1": "Captan or thiophanate-methyl fungicides"
+          }
+        }
+      },
+      "Strawberry___healthy": {
+        "name": "Healthy Strawberry",
+        "description": "Your strawberry plants are producing well!",
+        "treatments": {
+          "care": {
+            "1": "Renovate beds after harvest",
+            "2": "Use straw mulch to keep fruit clean",
+            "3": "Replace plants every 3-4 years"
+          }
+        }
+      },
+      "Tomato___Bacterial_spot": {
+        "name": "Bacterial Spot",
+        "description": "Small water-soaked spots that become scabby on fruit.",
+        "treatments": {
+          "organic": {
+            "1": "Use disease-free seed",
+            "2": "Avoid overhead watering"
+          },
+          "chemical": {
+            "1": "Copper sprays early in season"
+          }
+        }
+      },
+      "Tomato___Early_blight": {
+        "name": "Early Blight",
+        "description": "Target-like rings on lower leaves that spread upward.",
+        "treatments": {
+          "organic": {
+            "1": "Remove infected leaves",
+            "2": "Stake plants for better air flow"
+          },
+          "chemical": {
+            "1": "Chlorothalonil every 7-10 days"
+          }
+        }
+      },
+      "Tomato___Late_blight": {
+        "name": "Late Blight",
+        "description": "Rapidly spreading water-soaked lesions in cool, wet weather.",
+        "treatments": {
+          "organic": {
+            "1": "Destroy infected plants immediately",
+            "2": "Plant resistant varieties"
+          },
+          "chemical": {
+            "1": "Apply fungicides preventatively"
+          }
+        }
+      },
+      "Tomato___Leaf_Mold": {
+        "name": "Leaf Mold",
+        "description": "Yellow spots with olive-green mold underneath leaves.",
+        "treatments": {
+          "organic": {
+            "1": "Reduce humidity in greenhouse",
+            "2": "Space plants further apart"
+          },
+          "chemical": {
+            "1": "Chlorothalonil or copper fungicides"
+          }
+        }
+      },
+      "Tomato___Septoria_leaf_spot": {
+        "name": "Septoria Leaf Spot",
+        "description": "Small circular spots with dark margins and gray centers.",
+        "treatments": {
+          "organic": {
+            "1": "Remove lower leaves up to 12 inches",
+            "2": "Mulch to prevent soil splash"
+          },
+          "chemical": {
+            "1": "Mancozeb or copper fungicides"
+          }
+        }
+      },
+      "Tomato___Spider_mites Two-spotted_spider_mite": {
+        "name": "Spider Mites",
+        "description": "Tiny yellow stippling on leaves with fine webbing underneath.",
+        "treatments": {
+          "organic": {
+            "1": "Spray with water to dislodge mites",
+            "2": "Release predatory mites"
+          },
+          "chemical": {
+            "1": "Miticide sprays if severe"
+          }
+        }
+      },
+      "Tomato___Target_Spot": {
+        "name": "Target Spot",
+        "description": "Brown spots with concentric rings and yellow halos.",
+        "treatments": {
+          "organic": {
+            "1": "Remove infected plant material",
+            "2": "Improve air circulation"
+          },
+          "chemical": {
+            "1": "Chlorothalonil fungicides"
+          }
+        }
+      },
+      "Tomato___Tomato_Yellow_Leaf_Curl_Virus": {
+        "name": "Yellow Leaf Curl Virus",
+        "description": "Upward curling leaves with yellow margins, stunted growth.",
+        "treatments": {
+          "management": {
+            "1": "Remove infected plants",
+            "2": "Control whitefly vectors",
+            "3": "Plant resistant varieties"
+          }
+        }
+      },
+      "Tomato___Tomato_mosaic_virus": {
+        "name": "Tomato Mosaic Virus",
+        "description": "Mottled light and dark green patterns on leaves.",
+        "treatments": {
+          "prevention": {
+            "1": "Use virus-free seed",
+            "2": "Disinfect tools regularly",
+            "3": "Control aphid vectors"
+          }
+        }
+      },
+      "Tomato___healthy": {
+        "name": "Healthy Tomato",
+        "description": "Your tomato plant is thriving!",
+        "treatments": {
+          "care": {
+            "1": "Prune suckers below first flower cluster",
+            "2": "Water consistently (1-2 inches per week)",
+            "3": "Mulch to maintain soil moisture"
+          }
+        }
+      }
+    }
+  },
+  "fertilizerRecommendation": {
+    "title": "Fertilizer Recommendation",
+    "subtitle2": "Get personalized nutrition plans.",
+    "noCropError": "Please select a crop before proceeding.",
+    "result": "Recommendation Results",
+    "description": "Enter soil parameters and crop type for customized recommendation.",
+    "form": {
+      "cropType": "Crop Type",
+      "nitrogen": "Nitrogen (kg/ha)",
+      "phosphorous": "Phosphorus (kg/ha)",
+      "pottasium": "Potassium (kg/ha)",
+      "cropLabel": "Crop you want to grow",
+      "selectCrop": "Select Crop",
+      "nitrogenPlaceholder": "Enter value (e.g., 50)",
+      "phosphorousPlaceholder": "Enter value (e.g., 50)",
+      "pottasiumPlaceholder": "Enter value (e.g., 50)",
+      "phLevel": "pH Level"
+    },
+    "select": "Select Crop Type",
+    "recommend": "Recommend",
+    "recommending": "Recommending...",
+    "autofill": "Autofill Data",
+    "loading": "Loading...",
+    "recommendation": {
+      "Analysis": "Nutrient Analysis",
+      "Fertilizer": "Recommended Fertilizer",
+      "Organic": "Organic Treatment",
+      "Inorganic": "Inorganic Treatment",
+      "N_max": {
+        "title": "Nitrogen content is HIGH",
+        "balance": "To balance the nitrogen levels in the soil:",
+        "Type": {
+          "1": "Straw",
+          "2": "SawDust"
+        },
+        "result": {
+          "organicTreatment": {
+            "1": "Avoid N-rich fertilizers (composted manure, blood meal).",
+            "2": "Add carbon-rich materials (straw, sawdust) at 2–3 tons/ha.",
+            "3": "Grow N-scavenging crops (wheatgrass, sudangrass)."
+          },
+          "inorganicTreatment": {
+            "1": "Avoid nitrogen-rich inorganic fertilizers like urea or ammonium nitrate.",
+            "2": "Leach excess nitrogen by applying moderate irrigation to wash away soluble nitrogen compounds.",
+            "3": "Apply nitrification inhibitors to slow down the conversion of ammonium to nitrate, reducing nitrogen losses."
+          }
+        }
+      },
+      "N_min": {
+        "title": "Nitrogen content is LOW",
+        "balance": "To balance the nitrogen levels in the soil:",
+        "Type": {
+          "1": "Fish Emulsion",
+          "2": "Ammonium Sulfate",
+          "3": "Sulfur-Coated Urea",
+          "4": "Blood Meal",
+          "5": "Green Manure"
+        },
+        "result": {
+          "organicTreatment": {
+            "1": "Add nitrogen-rich organic fertilizers such as composted manure, blood meal, or fish emulsion.",
+            "2": "Use green manure by growing and tilling nitrogen-fixing cover crops like alfalfa or clover.",
+            "3": "Apply well-decomposed compost to slowly release nitrogen and improve soil structure."
+          },
+          "inorganicTreatment": {
+            "1": "Apply nitrogen-rich inorganic fertilizers like urea (46% N) or ammonium sulfate (21% N).",
+            "2": "Grow legumes like beans, peas, or clover to fix atmospheric nitrogen into the soil."
+          }
+        }
+      },
+      "P_max": {
+        "title": "Phosphorus content is HIGH",
+        "balance": "To balance the phosphorus levels in the soil:",
+        "Type": {
+          "1": "Rice Husk Ash",
+          "2": "Biochar",
+          "3": "Potassium Sulfate (SOP, 0:0:50)",
+          "4": "Gypsum"
+        },
+        "result": {
+          "organicTreatment": {
+            "1": "Avoid phosphorus-rich organic fertilizers like bone meal, rock phosphate, or fish bone meal.",
+            "2": "Apply compost with low phosphorus content to balance soil nutrients.",
+            "3": "Use mycorrhizal fungi inoculants to enhance plant phosphorus uptake and reduce excess soil phosphorus."
+          },
+          "inorganicTreatment": {
+            "1": "Apply gypsum (calcium sulfate) to bind excess phosphorus into insoluble calcium phosphate.",
+            "2": "Use potassium sulfate (0:0:50) instead of phosphorus-containing fertilizers to maintain crop nutrition.",
+            "3": "Adjust soil pH to 6.5–7 by adding lime (if acidic) or sulfur (if alkaline) to optimize phosphorus availability."
+          }
+        }
+      },
+      "P_min": {
+        "title": "Phosphorus content is LOW",
+        "balance": "To balance the phosphorus levels in the soil:",
+        "Type": {
+          "1": "Fish Bone Meal",
+          "2": "Di-Ammonium Phosphate (DAP)",
+          "3": "Triple Superphosphate (TSP, 0:46:0)",
+          "4": "Rock Phosphate"
+        },
+        "result": {
+          "organicTreatment": {
+            "1": "Add phosphorus-rich organic fertilizers such as bone meal, rock phosphate, or fish bone meal.",
+            "3": "Apply compost with balanced nutrient content to provide a slow release of phosphorus.",
+            "4": "Use mycorrhizal fungi by inoculating the soil with fungi that enhance phosphorus uptake by plant roots."
+          },
+          "inorganicTreatment": {
+            "2": "Apply phosphorus-rich inorganic fertilizers like DAP (18:46:0) or TSP (0:46:0).",
+            "5": "Adjust soil pH to 6–7 by adding lime (if acidic) or sulfur (if alkaline) to improve phosphorus availability."
+          }
+        }
+      },
+      "K_max": {
+        "title": "Potassium content is HIGH",
+        "balance": "To balance the potassium levels in the soil:",
+        "Type": {
+          "1": "Gypsum",
+          "2": "Epsom Salt (MgSO₄)",
+          "3": "Wood Chips"
+        },
+        "result": {
+          "organicTreatment": {
+            "1": "Stop applying potassium-rich organic fertilizers like wood ash, manure, or compost high in plant-based materials.",
+            "2": "Incorporate carbon-rich, low-potassium organic matter (straw, sawdust, shredded paper) to dilute the potassium concentration and improve soil structure.",
+            "3": "Grow potassium-demanding crops (e.g., potatoes, beets) to gradually remove excess potassium from the soil over time."
+          },
+          "inorganicTreatment": {
+            "1": "Avoid potassium-containing inorganic fertilizers such as potassium chloride (KCl) or potassium sulfate (K2SO4).",
+            "2": "Apply gypsum (calcium sulfate) to displace potassium ions and increase their leaching potential in well-drained soils, with careful monitoring.",
+            "3": "Leach the soil with large volumes of water (if drainage permits) to remove excess potassium, but be mindful of potential environmental impacts."
+          }
+        }
+      },
+      "K_min": {
+        "title": "Potassium content is LOW",
+        "balance": "To balance the potassium levels in the soil:",
+        "Type": {
+          "1": "Greensand",
+          "2": "Muriate of potash (MOP, 0:0:60)",
+          "3": "sulfate of potash (SOP, 0:0:50)",
+          "4": "Buckwheat Cover Crop",
+          "5": "Banana Peel Fertilizer"
+        },
+        "result": {
+          "organicTreatment": {
+            "1": "Add potassium-rich organic fertilizers such as wood ash, kelp meal, or greensand.",
+            "2": "Use cover crops like buckwheat or alfalfa to accumulate potassium in the soil.",
+            "3": "Apply banana peel fertilizer to improve potassium levels naturally."
+          },
+          "inorganicTreatment": {
+            "1": "Apply potassium-rich inorganic fertilizers like muriate of potash (MOP, 0:0:60) or sulfate of potash (SOP, 0:0:50).",
+            "2": "Use water-soluble potassium fertilizers like potassium nitrate (13:0:45) for quick availability."
+          }
+        }
+      },
+      "pH_max": {
+        "title": "pH Level is HIGH",
+        "balance": "To balance the pH levels in the soil:",
+        "Type": {
+          "1": "Elemental Sulfur",
+          "2": "Aluminum Sulfate",
+          "3": "Peat Moss",
+          "4": "Ammonium Sulfate",
+          "5": "Composted Pine Needles"
+        },
+        "result": {
+          "organicTreatment": {
+            "1": "Add acidifying organic materials like pine needles, peat moss, or composted oak leaves to lower soil pH.",
+            "2": "Incorporate organic matter such as compost or manure to improve soil structure and reduce alkalinity."
+          },
+          "inorganicTreatment": {
+            "1": "Apply acidifying inorganic materials like elemental sulfur or aluminum sulfate to lower soil pH.",
+            "2": "Use acid-forming fertilizers like ammonium sulfate (21% N) to gradually reduce soil pH.",
+            "3": "Leach excess alkalinity by applying moderate irrigation to wash away soluble salts."
+          }
+        }
+      },
+      "pH_min": {
+        "title": "pH Level is LOW",
+        "balance": "To balance the pH levels in the soil:",
+        "Type": {
+          "1": "Agricultural Lime",
+          "2": "Dolomite Lime",
+          "3": "Quick Lime",
+          "4": "Wood Ash",
+          "5": "Crushed Eggshells"
+        },
+        "result": {
+          "organicTreatment": {
+            "1": "Apply agricultural lime (calcium carbonate) at 2-5 tons/ha to gradually raise pH.",
+            "2": "Add wood ash (1-2 tons/ha) for quick pH correction and potassium supply.",
+            "3": "Use composted eggshells or oyster shells (500-1000 kg/ha) for slow pH adjustment."
+          },
+          "inorganicTreatment": {
+            "1": "Apply dolomitic lime (CaMg(CO₃)₂) at 1-3 tons/ha to raise pH and add magnesium.",
+            "2": "Use hydrated lime (Ca(OH)₂) at 500-1000 kg/ha for rapid pH increase (caution: strong effect).",
+            "3": "Mix calcium oxide (quicklime, CaO) at 200-500 kg/ha for severe acidity (wear protective gear)."
+          }
+        }
+      }
+    }
+  },
+  "crops": {
+    "rice": "Rice",
+    "maize": "Maize",
+    "chickpea": "Chickpea",
+    "kidneybeans": "Kidney Beans",
+    "pigeonpeas": "Pigeon Peas",
+    "mothbeans": "Moth Beans",
+    "mungbean": "Mung Bean",
+    "blackgram": "Black Gram",
+    "lentil": "Lentil",
+    "pomegranate": "Pomegranate",
+    "banana": "Banana",
+    "mango": "Mango",
+    "grapes": "Grapes",
+    "watermelon": "Watermelon",
+    "muskmelon": "Muskmelon",
+    "apple": "Apple",
+    "orange": "Orange",
+    "papaya": "Papaya",
+    "coconut": "Coconut",
+    "cotton": "Cotton",
+    "jute": "Jute",
+    "coffee": "Coffee",
+    "wheat": "Wheat",
+    "jowar": "Jowar",
+    "barley": "Barley",
+    "ragi": "Ragi",
+    "chickpeas": "Chickpeas",
+    "french beans": "French beans",
+    "fava beans": "Fava beans",
+    "lima beans": "Lima beans",
+    "cluster beans": "Cluster beans",
+    "soyabean": "Soyabean",
+    "black eyed beans": "Black eyed beans",
+    "kidney beans": "Kidney beans",
+    "pigeon peas": "Pigeon peas",
+    "moth bean": "Moth bean",
+    "mung beans": "Mung beans",
+    "green peas": "Green peas",
+    "horse gram": "Horse gram",
+    "black gram": "Black gram",
+    "rapeseed": "Rapeseed",
+    "coriander seeds": "Coriander seeds",
+    "mustard seeds": "Mustard seeds",
+    "sesame seed": "Sesame seed",
+    "cumin seeds": "Cumin seeds",
+    "lentils": "Lentils",
+    "brinjal": "Brinjal",
+    "beetroot": "Beetroot",
+    "bitter gourd": "Bitter gourd",
+    "bottle gourd": "Bottle gourd",
+    "capsicum": "Capsicum",
+    "cabbage": "Cabbage",
+    "carrot": "Carrot",
+    "cauliflower": "Cauliflower",
+    "cucumber": "Cucumber",
+    "coriander leaves": "Coriander leaves",
+    "curry leaves": "Curry leaves",
+    "drumstick": "Drumstick",
+    "chili": "Chili",
+    "lady finger": "Lady finger",
+    "mushroom": "Mushroom",
+    "onion": "Onion",
+    "potato": "Potato",
+    "pumpkin": "Pumpkin",
+    "radish": "Radish",
+    "olive": "Olive",
+    "sweet potato": "Sweet potato",
+    "fenugreek leaf": "Fenugreek leaf",
+    "spinach": "Spinach",
+    "ridgegourd": "Ridgegourd",
+    "gooseberry": "Gooseberry",
+    "jambun": "Jambun",
+    "ziziphus mauritiana": "Ziziphus mauritiana",
+    "garcinia indica": "Garcinia indica",
+    "tamarind": "Tamarind",
+    "tapioca": "Tapioca",
+    "garlic": "Garlic",
+    "lemon": "Lemon",
+    "tomato": "Tomato",
+    "ash gourd": "Ash gourd",
+    "pineapple": "P",
+    "jackfruit": "Jackfruit",
+    "guava": "Guava",
+    "water melon": "Water melon",
+    "musk melon": "Musk melon",
+    "apricot": "Apricot",
+    "chickoo": "Chickoo",
+    "custard apple": "Custard apple",
+    "dates": "Dates",
+    "figs": "Figs",
+    "aniseed": "Aniseed",
+    "asafoetida": "Asafoetida",
+    "bay leaf": "Bay leaf",
+    "black pepper": "Black pepper",
+    "cardamom": "Cardamom",
+    "cinnamon": "Cinnamon",
+    "cloves": "Cloves",
+    "jaiphal": "Jaiphal",
+    "ginger": "Ginger",
+    "turmeric": "Turmeric",
+    "cashewnuts": "Cashewnuts",
+    "raisins": "Raisins",
+    "almond nut": "Almond nut",
+    "arecanut": "Arecanut",
+    "pistachio nut": "Pistachio nut",
+    "lemon grass": "Lemon grass",
+    "sunflower": "Sunflower"
+  },
+  "errors": {
+    "connectionFailed": "Failed to connect to prediction service. Please try again later.",
+    "predictionFailed": "Failed to get recommendation"
+  },
+  "units": {
+    "celsius": "°C",
+    "percentage": "%",
+    "millimeter": "mm"
+  }
+}

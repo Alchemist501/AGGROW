@@ -10,10 +10,7 @@ df_fertilizer = pd.read_csv(CSV_PATH)
 
 
 def get_crop_npk_thresholds(crop):
-    # print("Crop:", crop)
-    # print("Crop:", df_fertilizer[crop])
     crop_data = df_fertilizer[df_fertilizer["Crop"] == crop]
-    # print(crop_data)
     if crop_data.empty:
         return None
     return {
@@ -58,20 +55,8 @@ def recommend_fertilizer(nitrogen, phosphorus, potassium, pH, crop):
     elif pH > crop_thresholds["pH_max"]:
         recommendations.append("pH_max")
 
-    print(recommendations)
     return (
         "\n\n".join(recommendations)
         if recommendations
         else "No organic fertilizer needed. Soil is well-balanced."
     )
-
-
-# # Example usage:
-# npk_values = {
-#     "nitrogen": 90,
-#     "phosphorus": 25,
-#     "potassium": 20,
-#     "pH": 5.5,
-#     "crop": "Rice",
-# }
-# print(recommend_organic_fertilizer(**npk_values))

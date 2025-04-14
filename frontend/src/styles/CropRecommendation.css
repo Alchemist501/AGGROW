@@ -1,0 +1,273 @@
+/* ===== Modern Crop Recommendation CSS ===== */
+/* Reuse the same color palette from DiseaseDetection */
+:root {
+  --primary-green: #3a7d44;
+  --secondary-green: #4CAF50;
+  --dark-green: #2d6a4f;
+  --light-green: #d8f3dc;
+  --soil-brown: #8B4513;
+  --light-gray: #f5f5f5;
+  --white: #ffffff;
+  --text-dark: #1b4332;
+  --text-light: #f8f9fa;
+  --blue: #3498db;
+  --dark-blue: #2980b9;
+  --red: #e74c3c;
+  --light-red: #ffecec;
+}
+
+.crop-recommendation-container {
+  max-width: 800px;
+  margin: 2rem auto;
+  padding: 2.5rem;
+  background: var(--white);
+  border-radius: 16px;
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.08);
+  font-family: 'Open Sans', sans-serif;
+  border: 1px solid rgba(0, 0, 0, 0.05);
+}
+
+.crop-recommendation-container h1 {
+  font-size: 2rem;
+  font-weight: 700;
+  color: var(--dark-green);
+  margin-bottom: 1.5rem;
+  font-family: 'Poppins', sans-serif;
+  text-align: center;
+  position: relative;
+  padding-bottom: 0.5rem;
+}
+
+.crop-recommendation-container h1::after {
+  content: '';
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 80px;
+  height: 3px;
+  background: var(--primary-green);
+}
+
+.crop-form {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  gap: 1.5rem;
+  margin-top: 2rem;
+}
+
+.form-group {
+  margin-bottom: 1rem;
+}
+
+.form-group label {
+  display: block;
+  margin-bottom: 0.5rem;
+  font-weight: 600;
+  color: var(--text-dark);
+}
+
+.form-control {
+  width: 100%;
+  padding: 0.8rem;
+  border: 2px solid #e0e0e0;
+  border-radius: 8px;
+  font-size: 1rem;
+  transition: border-color 0.3s;
+}
+
+.form-control:focus {
+  outline: none;
+  border-color: var(--primary-green);
+}
+
+.location-controls {
+  grid-column: span 2;
+  display: flex;
+  justify-content: center;
+  margin: 1rem 0;
+}
+
+.location-button {
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  transition: all 0.3s;
+}
+
+.location-button:hover {
+  background: var(--dark-blue);
+  transform: translateY(-2px);
+}
+
+.location-button:disabled {
+  background: #cccccc;
+  transform: none;
+  cursor: not-allowed;
+}
+
+.weather-info {
+  grid-column: span 2;
+  display: flex;
+  gap: 1.5rem;
+  background: var(--light-gray);
+  padding: 1rem;
+  border-radius: 8px;
+}
+
+.weather-field {
+  flex: 1;
+}
+
+.predict-btn {
+  grid-column: span 2;
+  background: var(--primary-green);
+  color: var(--white);
+  border: none;
+  padding: 1rem;
+  border-radius: 8px;
+  font-size: 1.1rem;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  margin-top: 1rem;
+}
+
+.predict-btn:hover {
+  background: var(--dark-green);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+}
+
+.predict-btn:disabled {
+  background: #cccccc;
+  transform: none;
+  cursor: not-allowed;
+}
+
+/* Results Section */
+.prediction-result {
+  background: var(--light-green);
+  border-radius: 12px;
+  padding: 2rem;
+  margin-top: 2rem;
+  animation: fadeIn 0.5s ease-out;
+}
+
+.prediction-result h2 {
+  color: var(--dark-green);
+  font-size: 1.5rem;
+  margin-bottom: 1.5rem;
+  text-align: center;
+}
+
+.crop-name {
+  font-size: 2.2rem;
+  font-weight: 700;
+  color: var(--primary-green);
+  margin: 1rem 0;
+  text-align: center;
+}
+
+.crop-details {
+  background: var(--white);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+}
+
+.crop-details ul {
+  list-style-type: none;
+  padding: 0;
+  margin: 0;
+}
+
+.crop-details li {
+  padding: 0.8rem 0;
+  border-bottom: 1px solid #eee;
+  display: flex;
+  justify-content: space-between;
+}
+
+.crop-details li:last-child {
+  border-bottom: none;
+}
+
+.detail-label {
+  font-weight: 600;
+  color: var(--soil-brown);
+}
+
+.new-prediction-button {
+  background: var(--blue);
+  color: var(--white);
+  border: none;
+  padding: 0.8rem 1.5rem;
+  border-radius: 8px;
+  font-weight: 600;
+  cursor: pointer;
+  transition: all 0.3s;
+  display: block;
+  width: 100%;
+  margin-top: 1rem;
+}
+
+.new-prediction-button:hover {
+  background: var(--dark-blue);
+  transform: translateY(-2px);
+}
+
+/* Loading and Error States */
+.prediction-loading {
+  text-align: center;
+  padding: 2rem;
+  color: var(--blue);
+  font-style: italic;
+}
+
+.prediction-error {
+  background: var(--light-red);
+  color: var(--red);
+  padding: 1.5rem;
+  border-radius: 8px;
+  margin: 1.5rem 0;
+  text-align: center;
+  font-weight: 600;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+    transform: translateY(10px);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .crop-form {
+    grid-template-columns: 1fr;
+  }
+  
+  .location-controls,
+  .weather-info,
+  .predict-btn {
+    grid-column: span 1;
+  }
+  
+  .weather-info {
+    flex-direction: column;
+    gap: 1rem;
+  }
+}

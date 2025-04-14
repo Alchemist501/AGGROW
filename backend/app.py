@@ -9,8 +9,8 @@ from routes.cropRecommendation import cropRecommendation_bp
 app = Flask(__name__, static_folder="static", static_url_path="/")
 CORS(app)
 app.register_blueprint(fertilizer_bp, url_prefix="/fertilizer")
-app.register_blueprint(cropRecommendation_bp, url_prefix="/cropRecommendation")
-app.register_blueprint(diseaseDetection_bp, url_prefix="/diseaseDetection")
+app.register_blueprint(cropRecommendation_bp, url_prefix="/crop")
+app.register_blueprint(diseaseDetection_bp, url_prefix="/disease")
 
 
 # --- React routes ---

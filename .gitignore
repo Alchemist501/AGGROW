@@ -1,2 +1,5 @@
 AGGROW
 __pycache__
+node_modules
+.env
+package-lock.json

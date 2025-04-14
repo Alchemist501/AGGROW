@@ -8,7 +8,7 @@ with open("models/cropRecommendationModel/CropRecommendation.pkl", "rb") as file
     crop_recommendation_model = pickle.load(file)
 
 
-@cropRecommendation_bp.route("/api/crop-recommendation", methods=["POST"])
+@cropRecommendation_bp.route("/recommendation", methods=["POST"])
 def predict_crop():
     try:
         data = request.get_json()
