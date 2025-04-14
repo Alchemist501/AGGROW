@@ -43,7 +43,7 @@ Aggrow is an innovative agricultural assistant powered by artificial intelligenc
 1.  Clone the repository:
 
     ```bash
-        git clone [repository_url]
+        git clone https://github.com/Alchemist501/AGGROW.git
         cd frontend
     ```
 
